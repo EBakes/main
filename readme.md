@@ -2,4 +2,4 @@
 
 goal: *raise 10,500 in past due tuition*
 
-[Link](streamlabs.com/ebakes)
+[donation page](https://www.streamlabs.com/ebakes)
