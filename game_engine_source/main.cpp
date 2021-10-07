@@ -7,5 +7,6 @@
 int main(int argc, char const *argv[])
 {
     /* code */
+    log("program started");
     return 0;
 }
