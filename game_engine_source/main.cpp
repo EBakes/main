@@ -1,6 +1,7 @@
 // @author Erik Baker
 // @date 10/4/2021
 // @brief program start - launch engine in working directory
+#pragma once
 
 #include "main.h"
 

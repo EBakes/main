@@ -2,6 +2,7 @@
 // @date 10/5/2021
 // @brief define log utility macro
 #pragma once
+
 #include <iostream>
 
 void log(const char * str)
