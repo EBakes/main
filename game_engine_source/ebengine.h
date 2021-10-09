@@ -11,16 +11,22 @@ class ebengine : Types...
 {
 public:
 
-ebengine()
+ebengine() : return_code(0)
 {
     log("ebengine constructor");
 }
 
 ~ebengine()
 {
+    log("ebengine destructor");
+}
 
+int exit_code()
+{
+    log("return shutdown code");
+    return return_code;
 }
 
 private:
-
+int return_code;
 };

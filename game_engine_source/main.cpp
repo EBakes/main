@@ -11,5 +11,5 @@ int main(int argc, char const *argv[])
 
     data<ebengine<Window> , 0>();
 
-    return 0;
+    return data<ebengine<Window>, 0>().exit_code();
 }

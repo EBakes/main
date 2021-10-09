@@ -14,6 +14,11 @@ class Window
         log("Window constructor!");
     }
 
+    ~Window()
+    {
+        log("Window destructor");
+    }
+
 
     private:
 
