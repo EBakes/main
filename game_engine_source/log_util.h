@@ -7,5 +7,6 @@
 
 void log(const char * str)
 {
-    std::cout <<"Debug Message " <<  __COUNTER__ <<": "<< str << std::endl;
+    static unsigned counter = 0;
+    std::cout <<"Debug Message " <<  counter++ <<": "<< str << std::endl;
 }
