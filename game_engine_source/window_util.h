@@ -5,13 +5,22 @@
 
 #include "log_util.h"
 
+
 class Window
 {
     public:
 
     Window()
     {
-        log("Window constructor!");
+        log("Window constructor");
+
+        // setup callback system
+        
+    }
+
+    void operator()()
+    {
+        log("Window operator()");
     }
 
     ~Window()

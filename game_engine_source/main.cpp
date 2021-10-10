@@ -7,9 +7,7 @@
 int main(int argc, char const *argv[])
 {
     /* code */
-    log("program started");
+    log("main program started");
 
-    data<ebengine<Window> , 0>();
-
-    return data<ebengine<Window>, 0>().exit_code();
+    return data<ebengine<Window> , 0>()();
 }
