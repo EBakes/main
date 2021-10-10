@@ -4,11 +4,5 @@
 #pragma once
 
 #include "log_util.h"
+#include "universal_data_holster.h"
 
-template <typename T>
-void register_callback(float time_between_callbacks, void(T::*)(float))
-{
-    log("callback registered");
-
-    // launch thread to call function 
-}

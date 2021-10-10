@@ -7,7 +7,7 @@
 #include "log_util.h"
 #include "callback.h"
 
-template <typename ... Types>
+template <unsigned ID, typename ... Types>
 class ebengine : Types...
 {
 public:
@@ -18,16 +18,14 @@ ebengine() : return_code(0)
 
 }
 
-void Update(float dt)
+void Update()
 {
-    (void)dt;
+    log("ebengine Update");
 }
 
 int operator()()
 {
     log("ebengine operator()");
-
-    register_callback<ebengine>(0.01f, Update);
 
     return return_code;
 }
