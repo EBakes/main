@@ -7,30 +7,35 @@
 #include "log_util.h"
 #include "callback.h"
 
+enum engine_states
+{
+    shutdown,
+    running
+};
+
 template <unsigned ID, typename ... Types>
 class ebengine : Types...
 {
 public:
 
-ebengine() : return_code(0)
+ebengine() : engine_state(running)
 {
     log("ebengine constructor");
 
-}
-
-void Update()
-{
-    log("ebengine Update");
 }
 
 int operator()()
 {
     log("ebengine operator()");
 
-    return return_code;
+    while (engine_state == running)
+    {
+        // state machine call update
+        engine_update();
+    }
+
+    return engine_state;
 }
-
-
 
 ~ebengine()
 {
@@ -39,5 +44,25 @@ int operator()()
 
 
 private:
-int return_code;
+
+    void engine_update()
+    {
+        log("engine update");
+    
+        if (--engine_kill_timer < 0)
+        {
+            engine_state = shutdown;
+        }
+
+        /*
+            put more things here once window management is done
+        */
+
+
+    }
+
+
+    int engine_state;
+
+    int engine_kill_timer = 100;
 };

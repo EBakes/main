@@ -12,10 +12,7 @@ class Window
 
     Window()
     {
-        log("Window constructor");
-
-        // setup callback system
-        
+        log("Window constructor");        
     }
 
     void operator()()

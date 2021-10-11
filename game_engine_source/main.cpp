@@ -8,8 +8,8 @@
 
 int main(int argc, char const *argv[])
 {
-    /* code */
     log("main program started");
+
 
     return data<ebengine<Engine_ID, Window> , Engine_ID>()();
 }
