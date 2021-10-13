@@ -6,6 +6,10 @@
 #include <iostream>
 #include "log_util.h"
 #include "callback.h"
+#include "introspection_util.h"
+#include <typeinfo>
+
+
 
 enum engine_states
 {
@@ -45,6 +49,15 @@ int operator()()
 
 private:
 
+class class_with_serialize
+{
+    public:
+    void serialize()
+    {
+        log("class serialize");
+    }
+};
+
     void engine_update()
     {
         log("engine update");
@@ -53,13 +66,17 @@ private:
         {
             engine_state = shutdown;
         }
-
+        
         /*
             put more things here once window management is done
         */
+        
 
+        
 
     }
+
+
 
 
     int engine_state;
