@@ -13,5 +13,5 @@ int main(int argc, char const *argv[])
 {
     log("main program started");
 
-    return data<ebengine<Engine_ID, Window> , Engine_ID>()();
+    return data<ebengine<Engine_ID, DataPool, Window, sandbox> , Engine_ID>()();
 }
