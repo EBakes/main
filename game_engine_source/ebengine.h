@@ -7,7 +7,6 @@
 #include "log_util.h"
 #include "callback.h"
 #include "introspection_util.h"
-#include <typeinfo>
 
 
 

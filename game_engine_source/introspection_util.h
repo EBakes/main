@@ -1,6 +1,7 @@
 // @author Erik Baker
 // @date 10/12/2021
 // @brief implement c++ reccomended introspection strategy
+#include <type_traits>
 
 template <class CheckingType> 
 struct container
