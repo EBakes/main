@@ -68,11 +68,10 @@ class class_with_serialize
         
         /*
             put more things here once window management is done
+            call operator() on all parents ?? add some extra fluff to make this easier
         */
         
-
         
-
     }
 
 

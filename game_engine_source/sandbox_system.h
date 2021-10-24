@@ -15,7 +15,15 @@ public:
         log("sandbox ctor");
     }
 
+    void operator()()
+    {
 
+    }
+    
+    ~sandbox()
+    {
+        log("sandbox destructor");
+    }
 private:
 
 
